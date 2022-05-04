@@ -1,0 +1,102 @@
+TypeScript
+---
+  TS = JS + Datatyping 
+    
+    * Stricty-typed lang
+    * Microsoft 
+    * open sourced 
+
+  checkout.ts  => (tsc) =>  checkout.js 
+  ------
+
+  Primitive Datatypes in JS: 
+  ---
+    string, number, boolean, undefined, null, symbol (es2015), bigint (es2017)
+
+  Types of Languages (Datatyping)
+  -----
+    1. Loosely Typed Languages 
+        Examples: JS, Python, PHP
+
+        JS Syntax 
+        ---
+          var x = 10; // number 
+          x = true; // valid 
+          x = "test";
+          x = {};
+          x = [];
+          x = undefined;
+          x = null; 
+          x = function(){
+
+          } 
+
+    2. Strongly-Typed / Strictly-typed Languages 
+        Examples: Java, C, C++, C# 
+        
+        Java/ C# Syntax 
+        ---=-----------
+          int i = 10;
+          i = true; // error 
+          i = "Test"; // error 
+          
+  Syntax in TypeScript 
+  ---
+    1. Explicit Datatyping 
+        var x: number = 10;
+        x = 100; // valid
+        x = true; // error 
+        x = []; // error 
+
+    -------
+    2. Implicit Datatyping (type inference)
+        var y = 20; // valid   
+        y = 100; // valid
+        y = true; // error 
+
+---
+Various Data types and variable declaration
+----
+  var appName: string = "Online Shopping App";
+  var teamMembersCount: number = 24; 
+  var isInDevelopment: boolean = true; 
+  var u: undefined = undefined; 
+  var n: null = null; 
+
+  var teamMembers1: string[]  = [ "Vishnu", "Davang" ];
+  var teamMembers2: Array<string> = [ "Vishnu", "Davang" ];
+
+  var project: Object  = {
+    startDate: 24/Feb/2022,
+    endDate: 6/Mar/2022,
+    company: "Sapient" 
+  }
+
+Few other types
+---
+  var launchDate: Date = new Date();
+  
+
+=============
+
+  TODO:  Learn about Symbol and BigInt in TS 
+  ----
+
+==========
+
+TypeScript Compiler Setup 
+---
+  Softwares Needed: NodeJS 
+  Skillset Needed: npm commands 
+      npm install typescript -g 
+
+=========
+
+
+  
+
+
+  
+
+
+  

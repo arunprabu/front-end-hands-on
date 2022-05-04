@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <h1>DOM Examples</h1>
+  <button type="button" onclick="handleFindNodeType()">Find NodeType</button>
+
+  <hr>
+  <p id="para1" class="myPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, distinctio autem
+    voluptates mollitia sint animi dolore et ratione quae. Saepe nobis dolore impedit vel cumque possimus dolorum
+    exercitationem nostrum ex!</p>
+  <button type="button" onclick="handleFindNodeName()">Find NodeName</button>
+
+  <hr>
+  <h2 id="heading2">DOM Manipulation</h2>
+  <h4>Change BG Color and Color - Demo</h4>
+  <div id="div1">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+  </div>
+  <button type="button" id="changeStyleBtn">Change Style</button>
+  <hr>
+
+  <h4>Show / Hide</h4>
+  <div id="div2">
+    Lorem ipsum dolor sit amet consectetur.
+  </div>
+
+  <button type="button" id="showHideBtn">Show or Hide</button>
+  <hr>
+
+  <h4>InnerHTML - Demo</h4>
+  <div id="div3">
+    .....
+  </div>
+  <button onclick="handleAddContent()">Add / Modify Content</button>
+
+  <hr>
+  <h4>Create New Elements</h4>
+  <div id="div4">
+    ....
+  </div>
+  <button onclick="handleCreateElement()">Create New Element - Add User</button>
+
+  <hr>
+  <h4>Cloning Nodes</h4>
+  <div id="div5">
+    <ul id="experience" class="experience">
+      <li>
+        Company Name:
+        <input type="text">
+      </li>
+      <li>
+        Role:
+        <input type="text">
+      </li>
+    </ul>
+  </div>
+  <button onclick="handleCloneExperience()">Clone</button>
+  <hr>
+
+  <hr>
+  <h4>Removing Elements</h4>
+  <div id="div6">
+    Testing...
+  </div>
+  <button id="removeElementBtn">Remove</button>
+  <hr>
+
+  <script>
+
+    function handleFindNodeType() {
+      // Dom Querying using getElementsByTagName
+      var h1Element = document.getElementsByTagName("h1");
+      console.log(h1Element[0].nodeType); // h1 is an element -- will have nodeType 1
+      alert("Node Type is: " + h1Element[0].nodeType + ". It is an Element");
+      console.log(h1Element[0].nodeName); // h1 
+    }
+
+    function handleFindNodeName() {
+      // Dom Querying using getElementById 
+      var paraEl = document.getElementById("para1");
+      console.log(paraEl.nodeName); // p   
+      alert("Node Name is: " + paraEl.nodeName);
+    }
+
+    // let classAttrNodeType = paraEl.getAttributeNode("class").nodeType;
+    // console.log(classAttrNodeType); // 2
+
+    /* For more  Ref: https://developer.mozilla.org/en-US/docs/Web/API/Node  */
+
+
+
+  </script>
+
+  <script src="./assets/scripts/main.js"></script>
+</body>
+
+</html>

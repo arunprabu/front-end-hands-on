@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Blog App!</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About iKart - We ....">
+  <meta name="keywords" content="online shopping, ikart shopping, ikart,
+ecommerce, e-com, quick commerce, the best shopping site india">
+
+  <style>
+    .textCenter{
+      text-align: center !important;
+    }
+
+    #blogForm div{
+      margin-top:20px;
+    }
+
+    #blogForm label{
+      width: 200px;
+      text-align: right;
+      display: inline-block;
+    }
+
+    #blogForm input{
+      width: 200px;
+      padding: 5px 10px;
+    }
+
+    .blogSection{
+      display: flex;
+      margin: 0 4%;
+    }
+
+    .createPostSection{
+      background-color: #eee;
+      padding: 2%;
+      width: 40%;
+    }
+
+    .listPostsSection{
+      background-color: rgb(235, 245, 255);
+      padding: 2%;
+      width: 60%;
+    }
+
+    .listPostsSection button{
+      font-size: 14px;
+      padding: 3px 6px;
+    }
+
+    .postSection{
+      border: solid 1px #ccc;
+      padding: 2%;
+      margin-bottom: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  
+  <main>
+    <h1 class="textCenter">Blog App!</h1>
+
+    <div class="blogSection">
+      <div class="createPostSection">
+        <h2 class="textCenter">Create Blog Post!</h2>
+        <form id="blogForm">
+          <div>
+            <label for="postTitle">Enter Blog Post Title:</label>
+            <input type="text" id="postTitle">
+          </div>
+
+          <div>
+            <label for="postContent">Enter Blog Post Content:</label>
+            <input type="text" id="postContent">
+          </div>
+
+          <div>
+            <input type="submit" value="Create Blog Post" style="margin-left: 206px">
+          </div>
+        </form>
+
+      </div>
+
+      <div class="listPostsSection">
+        <h2 class="textCenter">Listing Blog Posts!</h2>
+        
+        <div id="blogPostsWrapper"> 
+          <!-- The following is the template for blog posts -- which you have create dynamically using array map -->
+          <div class="postSection">
+            <span>#100</span>
+            <h3> Blog Post Title 1</h3>
+            <p>Blog Post Content 1</p>
+          </div>
+
+          
+        </div>
+
+      </div>
+    </div>
+    
+  </main>
+
+</body>
+
+</html>

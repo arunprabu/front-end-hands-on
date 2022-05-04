@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 JS APIs</title>
+</head>
+<body>
+  <h1>HTML5 JS APIs</h1>
+
+  <button>Access Location - TODO</button>
+
+
+  <h2>Storage - Demo</h2>
+  <form style="margin-top: 25px;" onsubmit="handleLogin(event)">
+    
+    <div >
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+     
+    </div>
+  </form>
+
+  <button type="button" onclick="handleLogout()">Logout</button>
+
+
+  <h2>Webworker, Post Message, Receive Message - Demo</h2>
+
+  <form>
+    <div>
+      <label for="number1">Multiply number 1: </label>
+      <input type="text" id="number1" value="0">
+    </div>
+    <div>
+      <label for="number2">Multiply number 2: </label>
+      <input type="text" id="number2" value="0">
+    </div>
+  </form>
+
+  <p class="result">Result: 0</p>
+
+  <h2>History - Pushstate, Popstate, Replace - Demo</h2>
+  <button onclick="handlePrevPage()">Goto Prev Page</button>
+  <button onclick="handleNextPage()">Goto Next Page</button>
+  <button onclick="handleReplacePage()">Replace this page</button>
+
+
+  <script src="./html5-js-api.js"></script>
+
+
+
+
+
+</body>
+</html>

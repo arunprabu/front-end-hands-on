@@ -1,0 +1,38 @@
+4 Pillars of OOPS
+========
+  1. Encapsulation 
+      * group of related variables within an obj 
+      * to avoid code complexity 
+      * thus increasing chance of reusability.
+      * helps avoid dealing with functions with params
+      * Encapsulation refers to the bundling of data, along with the methods that operate on that data into a single unit.
+      
+    Example: hands-on car example 
+
+  2. Abstraction (aka) Data Abstraction
+      Prereq: Class 
+      * hiding the complex things 
+      * provide simpler interface
+      * it also reduces impact of internal changes
+
+      Example: Car under the hood, remote control, switch boards, 
+                our backend rest api 
+
+  3. Inheritance 
+        Prereq: Class 
+
+      * code reusability 
+      * helps avoid redundant code 
+      * consuming already defined method will be easier
+      * readability
+      * supports code extensibility
+
+
+  4. Polymorphism 
+        morph?  === shape 
+        polymorph? === getting different shape 
+        polymorphism? === ability to take many forms.
+
+      Polymorphism is an ability to call the same method on different objects
+      and each object responds in different way is called POLYMORPHISM
+

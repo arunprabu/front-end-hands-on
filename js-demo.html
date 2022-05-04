@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title> 
+    
+    <style>
+      body{
+        background-color: aliceblue;
+      }
+    </style>
+
+  </head>
+  <body>
+    
+    <h1>JS Demo</h1>
+
+    <!-- Inline JS -- Not Recommended -->
+    <button onclick="console.log('Clicked')">Click Me 1</button>
+
+    <!-- internal js called -->
+    <button onclick="handleClickMe2();">Click Me 2</button>
+
+    <!-- external js called - Recommended -->
+    <button onclick="handleClickMe3();">Click Me 3</button>
+
+    
+
+
+
+    <script src="./assets/scripts/main.js" ></script>
+    <!-- Internal JS-->
+    <script>
+      debugger;
+      function handleClickMe2(){
+        debugger;
+        var x = 10;
+        console.log(x); // add debugger w/o debugger keyword
+      }
+    </script>
+    
+  </body>
+
+</html>

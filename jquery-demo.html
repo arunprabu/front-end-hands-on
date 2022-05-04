@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Demo</title>
+
+  <style>
+    /* internal css styles */
+      .para{
+        border: dashed 4px green;
+        border-radius: 6px;
+      }
+  </style>
+
+</head>
+<body>
+  
+  <h1 class="title">jQuery Demo</h1>
+  <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+  <button id="changeBgBtn" type="button">Change BG</button>
+  <button id="increaseFontSizeBtn" type="button">+</button>
+  <button id="decreaseFontSizeBtn" type="button">-</button>
+
+  <hr>
+  <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+  <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quibusdam.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo.</p>
+
+  <ul id="menus">
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+  <button type="button" id="addMenuBtn">Add Menu</button>
+
+  <div style="margin:20px">
+    <div id="wrapper" style="display: none;">
+      Lorem ipsum dolor sit amet consectetur.
+    </div>
+  
+    <button type="button" id="showBtn">Show</button>
+  </div>
+
+  <hr>
+  <h4>Cloning Elements</h4>
+  <div id="div5">
+    <ul id="experience" class="experience">
+      <li>
+        Company Name:
+        <input type="text">
+      </li>
+      <li>
+        Role:
+        <input type="text">
+      </li>
+    </ul>
+  </div>
+  <button>TODO: Clone using jQuery</button>
+  <hr>
+
+  <form id="contactForm">
+    <div>
+      <input type="text" id="nameInput" placeholder="Enter Name" aria-label="Enter Name">
+    </div>
+
+    <div>
+      <input type="text" id="emailInput" placeholder="Enter Email"  aria-label="Enter Email">
+    </div>
+    <button type="submit">Submit</button>
+
+    <div id="contactFormStatus" style="display: none;">
+    </div>
+
+  </form>
+
+  <div id="htmlContentWrapper" style="background-color: lightyellow; border: solid 5px #ccc; padding: 20px;">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi minima, nostrum delectus minus repudiandae consectetur iusto odit commodi voluptates dolore, eius rerum amet! Mollitia quis officia optio illo similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, dolor sapiente in praesentium vel alias! Architecto blanditiis unde expedita delectus placeat nemo quia quod soluta at nobis obcaecati, libero aliquid.</p>
+  </div>
+  <button id="loadHtmlBtn">Load External HTML using jQuery AJAX</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./assets/scripts/jq-demo.js"></script>
+
+</body>
+
+</html>

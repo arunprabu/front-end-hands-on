@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+
+.hello {
+  color: red;
+  font-family: 'Open Sans';
+  background: url('./sales.png');
+}

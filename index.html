@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>iKart App - The Best Online Shopping App in India!</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Initial Zoom level 
+      and width=device-width part sets the width of the page to follow the screen-width of the device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Home Page of iKart - We ...." />
+    <meta
+      name="keywords"
+      content="online shopping, ikart shopping, ikart,
+     ecommerce, e-com, quick commerce, the best shopping site india"
+    />
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet"> -->
+
+    <!-- Linking External Styles -->
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+
+    <!-- Internal CSS -->
+    <style>
+      /* element selector */
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        background-color: deepskyblue;
+        color: cornsilk;
+      }
+
+      /* ID selector */
+      #appDesc {
+        text-align: center;
+        line-height: 38px;
+      }
+
+      [type="button"] {
+        font-size: 22px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="appLogoBox">
+        <a href="./index.html">
+          <img
+            src="./assets/images/iKart-Logo.png"
+            alt="iKart Logo"
+            width="64"
+            height="64"
+          >
+        
+      </div>
+    </a>
+
+      <img
+        src="assets/icons/hamburger.png"
+        class="menuCollapsed"
+        width="32"
+        height="32"
+        alt="Menu Collapsed"
+      >
+      <nav class="primaryNav">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./cart.html">Cart(0)</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="jumbotron">
+        <h1>Same Day Delivery!</h1>
+        <p id="appDesc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa maxime,
+          aliquid repellat, fugiat consectetur nemo sunt quibusdam ipsam,
+          laudantium voluptatem minus. Eaque laboriosam recusandae beatae minus
+          consequuntur molestias est corporis.
+        </p>
+        <!-- Inline Styles -->
+        <button type="button" style="font-size: 20px">
+          Browse 1000+ Products
+        </button>
+      </section>
+
+      <section id="featureWrapper">
+        <div id="cities" class="featureBox">
+          <img src="./assets/images/city.png" alt="Serving 200 Cities" />
+          <h2>Serving 200 Cities!!!!</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#">View Details..</a>
+        </div>
+
+        <div id="cod" class="featureBox">
+          <img src="./assets/images/cod.png" alt="Cash on Delivery" />
+          <h2>Accepting COD</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#">View Details...</a>
+        </div>
+
+        <div id="selling" class="featureBox">
+          <img
+            src="./assets/images/sales.png"
+            alt="Selling 1000+ products / sec"
+          />
+          <h2>Selling 1000+ products / sec</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <a href="#">View Details...</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <p>&copy; 2022 Copyright | Arun</p>
+    </footer>
+  </body>
+</html>

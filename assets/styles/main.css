@@ -1,0 +1,295 @@
+/* External Styles */
+/* app wide css */
+
+/* Embedding Font using CSS3 @font-face rule */
+@font-face {
+  font-family: "Montserrat";
+  src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+
+/* Element Selector */
+body{
+  font-family: Montserrat;
+  margin: 0;
+}
+
+/* util classes */
+.ml5{
+  margin-left: 5px !important;
+}
+
+.textCenter{
+  text-align: center !important;
+}
+
+/* header styles */
+header {
+  height: 90px;
+  display:flex;
+}
+
+/* Class Selector */
+.appLogoBox{
+  width: 100px; 
+  margin: 10px 15px;
+}
+
+.primaryNav{
+  width: calc(100% - 130px);
+  padding-top:20px;
+  text-align: right;
+}
+
+.menuCollapsed{
+  display:none;
+}
+
+.primaryNav ul li{
+  display: inline;
+  padding: 0 15px;
+  list-style: none;
+}
+
+/* Attribute Selector */
+[type='button']{
+  background-color: deepskyblue;
+  border: deepskyblue;
+  font-size: 24px;
+  padding: 10px 26px; /* top right bottom left  */
+}
+
+
+main{
+  border-top: 1px solid #ddd;
+}
+
+a{ 
+  text-decoration: none;
+}
+
+/* Pseudo Selector */
+a:hover{
+  color: darkblue;
+  text-decoration: underline;
+}
+
+a:visited{
+  text-decoration: underline;
+}
+
+.primaryNav ul li:nth-child(5){
+  border: solid 5px primaryColor;
+  background: lightpink;
+}
+
+article:target {
+  background-color: gold;
+}
+
+/* for About page */
+.aboutUsText{
+  text-shadow: 3px 3px 1px primaryColor; /*offset-x offset-y blur-radius color */
+}
+
+#testimonials{
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 40px;
+}
+
+footer{
+  background: rgb(238,174,202); 
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  height: 120px;
+}
+
+/* home page styles */
+#jumbotron{
+  /* background: blue no-repeat url("../images/blurred-bg.jpeg"); */
+  background-color: blue;
+  background-image: url("../images/blurred-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+/*  background-origin: border-box; TODO:  */
+  height: 300px;
+  text-align: center;
+  padding: 160px 0;
+}
+
+video{
+  box-shadow: 5px 5px 10px 4px #0044FF;
+  display: block;
+  margin: 0 auto;
+}
+
+
+#featureWrapper{
+  display: flex;
+}
+
+#featureWrapper .featureBox{
+  background: #efefef;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  text-align: center;
+}
+
+#featureWrapper img{
+  border: 2px solid #9a9a9a;
+  border-radius: 50%;
+  width: 100px;
+}
+
+/*contact page related styles */
+.redText{
+  color: red !important;
+}
+
+.footerText{
+  color: brown;
+}
+
+/* about us page related styles */
+
+
+/* responsive styles */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .primaryNav{
+    display: none;
+  }
+
+  .menuCollapsed{
+    display:block;
+  }
+
+  #featureWrapper{
+    display: block;
+  }
+
+  #featureWrapper .featureBox{
+    display: block
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) { 
+  
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up)  - TV */
+@media only screen and (min-width: 1200px) {
+  
+}
+
+@media print {
+  body {
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif !important;
+  }
+  p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+  }
+
+  header, footer, aside, nav, form, iframe{
+    display: none;
+  }
+}
+
+
+#contactForm label{
+  width: 140px;
+  display: inline-block;
+}
+
+#contactForm input, #contactForm textarea{
+  width: 190px;
+  padding: 6px 9px;
+}
+
+#contactForm .error{
+  border: solid 1px red;
+  background: rgb(255, 165, 165);
+  padding: 3px 8px;
+  display: block;
+  width: 193px;
+  margin-left: 144px;
+  display: none;
+  font-size: 10px;
+}
+
+.alertSuccess{
+  background: rgb(151, 221, 129);
+  border: solid 1px rgb(9, 181, 66);
+  padding: 3px 8px;
+  width:350px;
+}
+
+.alertError{
+  background: rgb(255, 165, 165);
+  border: solid 1px red;
+  padding: 3px 8px;
+  width:350px;
+}
+
+#blogForm div{
+  margin-top:20px;
+}
+
+#blogForm label{
+  width: 200px;
+  text-align: right;
+  display: inline-block;
+}
+
+#blogForm input{
+  width: 200px;
+  padding: 5px 10px;
+}
+
+.blogSection{
+  display: flex;
+  margin: 0 4%;
+}
+
+.createPostSection{
+  background-color: #eee;
+  padding: 2%;
+  width: 40%;
+}
+
+.listPostsSection{
+  background-color: rgb(235, 245, 255);
+  padding: 2%;
+  width: 60%;
+}
+
+.listPostsSection button{
+  font-size: 14px;
+  padding: 3px 6px;
+}
+
+.postSection{
+  border: solid 1px #ccc;
+  padding: 2%;
+  margin-bottom: 20px;
+}

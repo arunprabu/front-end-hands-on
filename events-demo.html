@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+<body>
+  
+  <a href="dom-demo.html">Goto DOM Demo</a>
+  <hr>
+
+  <h1>Event Handling</h1>
+  <h2>Event Bubbling and Capturing - Demo</h2>
+
+  <h5>Event Bubbling - Stop Propagation</h5>
+  <div id="parentEl" style="border: solid 2px red;">
+    <p id="childEl" style="border: solid 2px blue;">Add to Cart</p>
+    <p style="border: solid 2px blue;">Success</p>
+  </div>
+
+  <h5>Event Capturing</h5>
+  <div id="parentEl2" style="border: solid 2px red;">
+    <p id="childEl2" style="border: solid 2px blue;">Add to Cart</p>
+    <p style="border: solid 2px blue;">Success</p>
+  </div>
+  <hr>
+  
+  <h2>Event - previousElementSibling </h2>
+  <button id="getDataBtn">Get Inner Text</button>
+  <hr>
+
+  <h2>Event - onload, onunload, onbeforeunload -- Refer events.js file - </h2>
+
+  <hr>
+  <h2>onFocus, onBlur, onResize - Events</h2>
+  <h4>onFocus and onBlur - Demo</h4>
+  <input type="text" id="nameInput" 
+  placeholder="Enter Name">
+  <p style="display: none;">Name should be max 40 characters</p>
+
+  <h4>onResize - Demo</h4>
+  <hr>
+  
+  <h2>Slideshow in HTML, JS</h2>
+  <img id="slideImg" width="500" height="300">
+
+  <script src="./assets/scripts/events.js"></script>
+  
+</body>
+</html>

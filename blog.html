@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>iKart | Contact Us for any support!</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About iKart - We ....">
+  <meta name="keywords" content="online shopping, ikart shopping, ikart,
+ecommerce, e-com, quick commerce, the best shopping site india">
+
+  <!-- Linking External Styles -->
+  <!-- <link rel="stylesheet" href="./assets/styles/print.css" media="print"> -->
+  <link rel="stylesheet" href="./assets/styles/main.css" media="screen">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="appLogoBox">
+      <a href="./index.html">
+        <img src="./assets/images/iKart-Logo.png" alt="iKart Logo" width="64" height="64">
+      </a>
+    </div>
+
+    <nav class="primaryNav">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./cart.html">Cart(0)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="textCenter">Blog App!</h1>
+
+    <div class="blogSection">
+      <div class="createPostSection">
+        <h2 class="textCenter">Create Blog Post!</h2>
+        <form id="blogForm">
+          <div>
+            <label for="postTitle">Enter Blog Post Title:</label>
+            <input type="text" id="postTitle">
+          </div>
+
+          <div>
+            <label for="postContent">Enter Blog Post Content:</label>
+            <input type="text" id="postContent">
+          </div>
+
+          <div>
+            <input type="submit" value="Create Blog Post" style="margin-left: 206px">
+          </div>
+        </form>
+
+      </div>
+
+      <div class="listPostsSection">
+        <h2 class="textCenter">Listing Blog Posts!</h2>
+        <p>Search Blog Posts 
+          <input type="search" id="searchQueryInput">
+          <button type="button" id="searchBtn">Search</button>
+          <span style="margin-left: 50px;"></span>
+        </p>
+
+        <div id="blogPostsWrapper"> 
+          <!-- The following is the template for blog posts -- which i create dynamically using js -->
+          <!-- <div class="postSection">
+            <span>#1</span>
+            <h3> Blog Post Title 1</h3>
+            <p>Blog Post Content 1</p>
+          </div> -->
+
+          
+        </div>
+
+      </div>
+    </div>
+    
+  </main>
+
+  <footer>
+    <hr>
+    <!-- check the css style defn with !important -->
+    <p class="redText footerText" style="color: green;">Goto Top</p>
+    <p class="redText">Happily made in Jan 2022</p>
+    <p>&copy; 2022 Copyright | Arun</p>
+  </footer>
+
+  <script src="assets/scripts/blog.js"></script>
+</body>
+
+</html>

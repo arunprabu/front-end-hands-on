@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>iKart | Contact Us for any support!</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About iKart - We ....">
+  <meta name="keywords" content="online shopping, ikart shopping, ikart,
+ecommerce, e-com, quick commerce, the best shopping site india">
+
+  <!-- Linking External Styles -->
+  <link rel="stylesheet" href="./assets/styles/main.css">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="appLogoBox">
+      <a href="./index.html">
+        <img src="./assets/images/iKart-Logo.png" alt="iKart Logo" width="64" height="64">
+      </a>
+    </div>
+
+    <nav class="primaryNav">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./cart.html">Cart(0)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+    <div id="contactFormWrapper">
+      <form id="contactForm" name="myContactForm">
+        <div>
+          <label for="customerNameInput">Enter Name:</label>
+          <input type="text" 
+            id="customerNameInput" 
+            name="customerName" autofocus placeholder="Enter Full Name"
+            value="John">
+          <span class="error"></span>
+        </div>
+
+        <div>
+          <br>
+          <label for="phoneInput">Enter Phone:</label>
+          <input type="number" id="phoneInput" 
+          name="phone" placeholder="Enter Phone with Country Code"
+          value="23423423232"
+          onblur="handleMinMaxLengthValidation(event, 10, 13, 'Phone Number should be between 10-13')"
+          onkeyup="handleMinMaxLengthValidation(event, 10, 13, 'Phone Number should be between 10-13')" >
+          <span class="error"></span>
+        </div>
+
+        <div>
+          <br>
+          <label for="emailInput">Enter E-Mail:</label>
+          <input type="email" id="emailInput" 
+          name="email" 
+           placeholder="Enter Email"
+           value="a@b.com"
+          onblur="handleRequiredValidation(event)" onkeyup="handleRequiredValidation(event)">
+          <span class="error"></span>
+        </div>
+
+        <div>
+          <br>
+          <label for="passwordInput">Enter Password:</label>
+          <input type="password" id="passwordInput" 
+          value="welcome"
+          name="password"  placeholder="Enter Password">
+          <span class="error"></span>
+        </div>
+
+        <div>
+          <br>
+          <label for="orderIdInput">Enter OrderID:</label>
+          <input type="text" id="orderIdInput" name="orderId"
+           placeholder="If Query is related to Order" 
+           value="123342"
+           onblur="handleNumberValidation(event)"
+           onkeyup="handleNumberValidation(event)">
+          <span class="error"></span>
+        </div>
+
+        <div>
+          <br>
+          <label for="countryInput">Enter Country:</label>
+          <input list="countryList" id="countryInput" name="country"
+           placeholder="Enter your Country">
+
+          <datalist id="countryList">
+            <option value="India">
+            <option value="USA">
+            <option value="Canada">
+            <option value="Australia">
+            <option value="New Zealand">
+          </datalist>
+          <span class="error"></span>
+        </div>
+
+        <div>
+          <br>
+          <label for="queryInput" style="vertical-align: top;">Enter Query!!!:</label>
+          <textarea id="queryInput" name="query"></textarea>
+          <span class="error"></span>
+        </div>
+
+        <div id="status" style="display: none;">
+        </div>        
+
+        <button 
+          type="submit" 
+          style="margin-left: 144px;margin-top: 10px;">Submit Query</button>
+        <button type="reset">Reset</button>
+
+        <button type="button" onclick="handleGotoHomePage()">
+          Go to Home Page</button>
+
+        <!-- <a href="https://www.google.com" 
+        onclick='alert("This link is out of service!");  return false;'>Click here</a>  -->
+
+      </form>
+
+      
+      <hr>
+    </div>
+
+    <aside>
+      Reach us out here!
+      <address>
+        <strong>Publicis Sapient Pvt Ltd,</strong><br>
+        2870, Building Virgo, Bagmane Constellation Business Park, <br>
+        Outer Ring Rd, Doddanekundi, <br>
+        Marathahalli, Bengaluru, Karnataka 560037<br>
+        <a href="mailto:contact@publicissapient.com">contact@publicissapient.com</a><br>
+        <a href="tel:+914455523688"><abbr title="Phone Number">Ph</abbr>: +91-80-6128-00008</a>
+      </address>
+    </aside>
+
+    <section>
+      <h2>Locate us here</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15551.547440426879!2d77.6950618!3d12.9790876!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2a9623c56e5d4a97!2sPublicis%20Sapient%20-%20Bengaluru!5e0!3m2!1sen!2sin!4v1643100522256!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        title="Sapient in Google Maps"></iframe>
+    </section>
+
+  </main>
+
+  <footer>
+    <hr>
+    <!-- check the css style defn with !important -->
+    <p class="redText footerText" style="color: green;">Goto Top</p>
+    <p class="redText">Happily made in Jan 2022</p>
+    <p>&copy; 2022 Copyright | Arun</p>
+  </footer>
+
+  <script src="assets/scripts/contact-form.js"></script>
+</body>
+
+</html>

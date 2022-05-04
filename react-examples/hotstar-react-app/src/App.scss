@@ -1,0 +1,11 @@
+/* comp-specific css -- all the descendents can use */
+
+$text-color: green;
+
+.App {
+  text-align: center;
+}
+
+.greenText{
+  color: $text-color;
+}

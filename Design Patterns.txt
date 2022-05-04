@@ -1,0 +1,12 @@
+Design Patterns are Solutions for Common Software Problems
+
+1. Creational Design Patterns
+    * they provide object Creational mechanism
+    Factory Pattern 
+
+2. Structural Design Patterns
+3. Behavioural Design Patterns
+
+
+
+

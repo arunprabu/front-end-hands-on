@@ -1,0 +1,16 @@
+JS Github repository (Generic 4 Days of course)
+---
+  https://github.com/arunprabu/Cisco-JS
+
+Autofill / Fillout Form Example
+  https://benalexkeen.com/autofilling-forms-with-javascript/
+
+Submitting form thru JS 
+  https://www.w3schools.com/jsref/met_form_submit.asp
+
+
+Debugging Memory leaks 
+====
+  https://www.debugbear.com/blog/debugging-javascript-memory-leaks
+
+
